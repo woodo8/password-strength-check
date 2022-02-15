@@ -1,0 +1,86 @@
+body{
+	margin: 0;
+	background-color: lavender;
+}
+body .wrapper{
+	width: 500px;
+	background-color: white;
+	padding: 20px 25px;
+	margin: 50px auto;
+	border-radius: 10px;
+}
+input{
+	display: block;
+	margin: 5px auto;
+	width: 95%;
+	height: 5vh;
+	padding: 0 25px;
+	font-size: 18px;
+	border: none;
+	outline: none;
+}
+.container{
+	width: 100%;
+}
+.container input::placeholder{
+	font-size: 18px;
+}
+.container{
+	position: relative;
+}
+img{
+	width: 20px;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+img:hover{
+	transform: scale(0.8);
+}
+#eye , #hide{
+	top: 5px;
+	right: 15px;
+}
+#hide{
+	display: none;
+}
+#del{
+	top: 5px;
+	right: 40px;
+}
+#lock{
+	top: 5px;
+	left: 0;
+}
+#line{
+	position: absolute;
+	bottom: -5px;
+	border-radius: 10px;
+}
+#line + div{
+	position: absolute;
+	bottom: -20px;
+	left: 240px;
+}
+h1{
+	color: #bababa;
+	text-align: center;
+}
+@media screen and (max-width: 500px){
+	body .wrapper{
+		width: 70%;
+	}
+	input{
+		width: 85%;
+		height: 30px;
+	}
+	img{
+		width: 18px;
+	}
+	#line + div{
+		bottom: -25px;
+		left: 40%;
+	}
+
+}
